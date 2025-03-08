@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON API Example</title>
+</head>
+<body>
+    <h1>Welcome to the JSON API</h1>
+
+    <script>
+        const userData = {
+            "user": {
+                "name": "Sahil Vaishnav",
+                "class": "CSE-Iot",
+                "college_year": 1,
+                "hostel_number": 7,
+                "room_number": 700,
+                "phone_number": "7357374022"
+            }
+        };
+
+        // Expose JSON data via a JavaScript function
+        window.getUserData = function() {
+            return userData;
+        };
+        console.log(userData);
+        console.log(userData.user.name);
+        
+        
+    </script>
+</body>
+</html>
